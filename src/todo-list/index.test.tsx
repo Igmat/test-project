@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './App';
+import TodoList from './';
 
-test('App matches snapshot', () => {
+test('TodoList matches snapshot', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<TodoList />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

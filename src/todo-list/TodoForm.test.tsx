@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './App';
+import TodoForm from './TodoForm';
 
-test('App matches snapshot', () => {
+test('TodoForm matches snapshot', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<TodoForm />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
